@@ -1,13 +1,41 @@
-Repository for Exercise 1.5 of Embedded Cryptography Book Section 9
+In this exercise, you can analyze the impact of design parameters of the MO-TRNG on the generator output. 
 
-In this exercise, you can play with a MO-TRNG again
-By scanning or clicking on the QR-code you can launch the application and observe how the number of oscillators,the jitter variance and the accumulation time affect the results of 5 black boxes tests that are proposed in the AIS31 and in the FIPS 140-1 suites.
+You can launch the application and observe how the number of xored oscillators, the jitter variance, and the accumulation time affect the randomness of the generated numbers. 
+By checking the box, you can save the generated bits in a local file.
 
-Your goal is to find the the smallest D, for which the generated data would pass all five black box tests.
-<p>You should repeat the procedure for all possible <sup>&#x3C3<sub>tot</sub></sup> &#8260 <sub>T<sub>1</sub></sub> and 	N values.</p>
+Randomness is analyzed thank to 5 black box tests included in the AIS31 test suite (four of which are also included in the FIPS 140-1).
 
+Your goal is to find the the the highest throuput (i.e. lowest $D$) for which the MO-TRNG would successfully pass all black box tests.
 
-
-
-
-<p><a href="https://mybinder.org/v2/gh/patrickhaddadteaching/TRNG_ex5/main?urlpath=voila%2Frender%2FTRNG_ex5_nb.ipynb" target="_blank" rel="noopener noreferrer">  <img src="ex5.png" width="50%" height="50%"></a></p>
+## How to launch the exercise ?
+* We can execute this exercise on [Colab](https://colab.research.google.com/github/patrickhaddadteaching/TRNG_ex5/blob/main/TRNG_ex5_nb.ipynb)
+    * Then press Ctrl+F9 or click on Runtime/Run All
+* The exercise is a jupyter notebook compatible with voila.
+The following libraries are required:
+    * numpy
+    * matplotlib
+## Examples of procedures to execute the exercise with different systems.
+1. Windows
+    * First of all, Let clone this repositorie
+    ```
+     git clone https://github.com/patrickhaddadteaching/TRNG_ex5
+    ```
+    * [Download and install the latest Miniconda](https://docs.conda.io/en/latest/miniconda.html#latest-miniconda-installer-links).
+    * Open the Anaconda Powershell Prompt associated to Miniconda3 and type the following commands to install  to install all the dependencies required by this exercise.
+     ```
+        conda install jupyter
+        conda install numpy
+        conda install matplotlib
+        conda install -c conda-forge voila    
+    ```
+    * Now, you can either launch the notebook by executing the folowing command in the directory where you cloned this repositorie.
+    ```
+    jupyter-notebook.exe .\TRNG_ex2_nb.ipynb
+    ```
+    
+    * Or, you can directly launch it with voila  by executing the folowing command in the directory where you cloned this repositorie.
+    ```
+    voila.exe .\TRNG_ex2_nb.ipynb
+    ```
+2. Linux
+3. Mac OS X
