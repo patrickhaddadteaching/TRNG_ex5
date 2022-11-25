@@ -9,7 +9,11 @@ Your goal is to find the the the highest throuput (i.e. lowest $D$) for which th
 
 ## How to launch the exercise ?
 * We can execute this exercise on [Colab](https://colab.research.google.com/github/patrickhaddadteaching/TRNG_ex5/blob/main/TRNG_ex5_nb.ipynb)
+    * [Click here](https://colab.research.google.com/github/patrickhaddadteaching/TRNG_ex5/blob/main/TRNG_ex5_nb.ipynb)
     * Then press Ctrl+F9 or click on Runtime/Run All
+* We can also execute this exercise on Binder
+    * Click or scan the QR-code <a href="[https://mybinder.org/v2/gh/patrickhaddadteaching/paramt1/main?urlpath=voila%2Frender%2Fparamt1
+_binder.ipynb](https://mybinder.org/v2/gh/patrickhaddadteaching/TRNG_ex5/main?urlpath=voila%2Frender%2FTRNG_ex5_nb.ipynb)"><img src="qr-code-TRNG_ex5.png" style="width:100px;height:100px;"></a>
 * The exercise is a jupyter notebook compatible with voila.
 The following libraries are required:
     * numpy
