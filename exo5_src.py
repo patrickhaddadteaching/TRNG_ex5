@@ -1,7 +1,6 @@
 from ipywidgets import widgets,interactive
 import numpy as np
 from time import time, sleep
-import matplotlib.pyplot as plt
 from datetime import datetime
 from os.path import abspath,exists
 from os import mkdir
