@@ -34,12 +34,12 @@ The following libraries are required:
     ```
     * Now, you can either launch the notebook by executing the folowing command in the directory where you cloned this repositorie.
     ```
-    jupyter-notebook.exe .\TRNG_ex2_nb.ipynb
+    jupyter-notebook.exe .\TRNG_ex5_nb.ipynb
     ```
     
     * Or, you can directly launch it with voila  by executing the folowing command in the directory where you cloned this repositorie.
     ```
-    voila.exe .\TRNG_ex2_nb.ipynb
+    voila.exe .\TRNG_ex5_nb.ipynb
     ```
 2. Linux
 3. Mac OS X
